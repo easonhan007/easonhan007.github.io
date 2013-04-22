@@ -4,7 +4,7 @@ title: 乙醇的blog
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
-## All Posts
+## 所有文章
 
 <ul class="posts">
   {% for post in site.posts %}
