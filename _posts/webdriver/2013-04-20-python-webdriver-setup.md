@@ -11,7 +11,7 @@ tags: [python, webdriver]
 
 * 安装python。目前selenium的python binding只支持python2.x，所以直接去官网上下载一个2.x的稳定版本就好；
 
-* 安装[setuptools]https://pypi.python.org/pypi/setuptools#downloads()。一定要注意安装对应python版本的setuptools;
+* 安装[setuptools](https://pypi.python.org/pypi/setuptools#downloads)。一定要注意安装对应python版本的setuptools;
 
 * 安装pipy。下载pipy的压缩包，解压后运行命令```python setup.py install```；
 
