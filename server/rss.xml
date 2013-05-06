@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>乙醇的Blog</title>
+        <description>乙醇的Blog - Eason Han</description>
+        <link>http://username.github.io</link>
+        <link>http://username.github.io</link>
+        <lastBuildDate>2013-05-05T20:06:27+08:00</lastBuildDate>
+        <pubDate>2013-05-05T20:06:27+08:00</pubDate>
+        <ttl>1800</ttl>
+
+
+        <item>
+                <title>安装ie driver和chrome driver</title>
+                <description>&lt;p&gt;很多同学在使用webdriver的时候总是忘了安装ie driver和chrome driver， 因此在这里简单介绍一下这2个driver的安装方式。&lt;/p&gt;
+
+&lt;h2 id='ie_driver'&gt;IE driver&lt;/h2&gt;
+
+&lt;p&gt;在新版本的webdriver中，只有安装了ie driver使用ie进行测试工作。&lt;/p&gt;
+
+&lt;p&gt;ie driver的下载地址在&lt;a href='https://code.google.com/p/selenium/downloads/list'&gt;这里&lt;/a&gt;，记得根据自己机器的操作系统版本来下载相应的driver。&lt;/p&gt;
+
+&lt;p&gt;下载好ie driver后，记得解压，然后把解压出来的文件放到系统的PATH里去。&lt;/p&gt;
+
+&lt;p&gt;一般来说，你可以把ie driver放在ruby，python或者是jdk的bin目录中。&lt;/p&gt;
+
+&lt;h2 id='chrome_driver'&gt;Chrome driver&lt;/h2&gt;
+
+&lt;p&gt;chrome driver的下载地址在&lt;a href='https://code.google.com/p/chromedriver/downloads/list'&gt;这里&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;安装方式与ie driver相同。&lt;/p&gt;</description>
+                <link>http://username.github.io/webdriver/2013/04/22/install-standalone-driver</link>
+                <guid>http://username.github.io/webdriver/2013/04/22/install-standalone-driver</guid>
+                <pubDate>2013-04-22T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>配置python webdriver开发环境</title>
+                <description>&lt;p&gt;在windows上配置python开发环境其实非常简单。在有网络连接的情况下，你可以通过下面的步骤来安装selenium2的python binding。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;安装python。目前selenium的python binding只支持python2.x，所以直接去官网上下载一个2.x的稳定版本就好；&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;安装pipy。下载pipy的压缩包，解压后运行命令&lt;code&gt;python setup.py install&lt;/code&gt;；&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;进入python安装目录下的Scripts目录，在命令行中运行&lt;code&gt;pip.exe install selenium -i http://b.pypi.python.org/simple&lt;/code&gt;，注意-i选项是指定了index，也就是pipy的镜像源，至于为什么要这么做，你懂的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+                <link>http://username.github.io/webdriver/2013/04/20/python-webdriver-setup</link>
+                <guid>http://username.github.io/webdriver/2013/04/20/python-webdriver-setup</guid>
+                <pubDate>2013-04-20T00:00:00+08:00</pubDate>
+        </item>
+
+
+</channel>
+</rss>
