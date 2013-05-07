@@ -9,9 +9,9 @@ tags: [python, webdriver]
 
 关于这本书
 ----------
-不得不说，这本书是受到[learn python the hard way]()的启示。
+不得不说，这本书是受到[learn python the hard way](http://learnpythonthehardway.org/)的启示。
 
-我当时在学习[learn python the hard way]()时候有这样一个困惑：练习太枯燥乏味了！前几个练习尽管很简单，但是仅仅是在命令行里打印出一些字符串，这种趣味性还是比较低下的。
+我当时在学习[learn python the hard way](http://learnpythonthehardway.org/)时候有这样一个困惑：练习太枯燥乏味了！前几个练习尽管很简单，但是仅仅是在命令行里打印出一些字符串，这种趣味性还是比较低下的。
 
 后来我忽然想到，如果在做练习的时候既有趣味性又有实用性，将黑底白字的控制台打印变成有趣的浏览器操作，让抽象的字符串文本变成具体的“当前页面的url”或“当前页面的标题”， 这样也许更多的人能坚持下去。
 
