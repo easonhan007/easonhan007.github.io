@@ -255,6 +255,15 @@ namespace :theme do
   
 end # end namespace :theme
 
+# add for run server in windows
+desc 'Run server in window and fix charset issue'
+task :rs do 
+	puts '* Changing the codepage'
+	`chcp 65001`
+	puts '* Running Jekyll'
+	`jekyll --server --auto --safe`
+end #end rs
+
 # Internal: Download and process a theme from a git url.
 # Notice we don't know the name of the theme until we look it up in the manifest.
 # So we'll have to change the folder name once we get the name.
