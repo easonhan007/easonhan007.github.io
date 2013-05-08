@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "笨方法通过webdriver学习python"
+title: "笨方法学webdriver顺便搞定python"
 description: "通过练习webdriver的方式来掌握python"
 ---
 {% include JB/setup %}

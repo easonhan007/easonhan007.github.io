@@ -29,7 +29,7 @@ Webdriver
 ---------
 可以将webdriver理解成是一种自动化测试工具。它可以模拟真实用户的行为，比如点击页面比如往文本框里输入文字等等。webdriver也支持录制和回放，如果你使用[Selenium IDE]()的话。当然了，要发挥webdriver的真正实力，这就需要我们去写代码实现了。
 
-webdriver是[selenium2](http://seleniumhq.org/)的一部分，因此学习webdriver也是在学习selenium(http://seleniumhq.org/)。
+webdriver是[selenium2](http://seleniumhq.org/)的一部分，因此学习webdriver也是在学习[selenium](http://seleniumhq.org/)。
 
 加分练习
 --------
