@@ -16,9 +16,7 @@ tags: [ruby, webdriver]
 打开IE
 --------
 用notepad++打开该文件，键入下面的代码并保存：
-	
-	require 'selenium-webdriver'
-	Selenium::WebDriver.for :ie
+<script src="https://gist.github.com/easonhan007/5552724.js"></script>
 
 从命令行中cd到该文件所在目录，假设你的文件存在在e盘code目录下，你可以这么做：
 
@@ -46,4 +44,3 @@ Ie浏览器被正确打开并显示```This is the initial start page for the Web
 
 * 练习使用```Selenium::WebDriver.for :chrome```来打开Chrome浏览器；
 * 练习使用```Selenium::WebDriver.for :ff```来打开Firefox浏览器；
-
