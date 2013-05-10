@@ -16,9 +16,7 @@ tags: [python, webdriver]
 打开IE
 --------
 用notepad++打开该文件，键入下面的代码并保存：
-	
-	from selenium import webdriver
-	webdriver.Ie()
+<script src="https://gist.github.com/easonhan007/5552834.js"></script>
 
 从命令行中cd到该文件所在目录，假设你的文件存在在e盘code目录下，你可以这么做：
 
