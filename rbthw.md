@@ -10,5 +10,6 @@ description: "笨方法学webdriver顺便搞定ruby"
 * [配置ruby webdriver开发环境](ruby/2013/05/08/setup-env/) 
 * [hello webdriver](ruby/2013/05/08/hello-webdriver/)
 * [启动浏览器](ruby/2013/05/09/start-browser/)
+* [注释、变量及打印](ruby/2013/05/17/commet-variable/)
 
 
