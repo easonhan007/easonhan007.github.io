@@ -7,6 +7,7 @@ tags: [video]
 ---
 {% include JB/setup %}
 
+* [一小时搞定Rspec(lazyman学习必看)](http://v.qq.com/boke/page/n/r/m/n01158xqlrm.html)
 * [webdriver实用指南](http://v.qq.com/boke/page/s/8/3/s0114uu1d83.html)
 * [selenium与webdriver的区别和联系](http://v.qq.com/boke/page/j/v/v/j01135krrvv.html)
 * [python版webdriver快速开始](http://v.qq.com/boke/page/o/q/z/o01135xg1qz.html)
