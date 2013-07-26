@@ -11,6 +11,7 @@ tags: [sublime, vim]
 --------------------------
 
 在Setting-User中增加如下配置，重新启动sublime既可
+
 ```java
 {
     "ignored_packages": [],
