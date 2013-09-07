@@ -2,8 +2,8 @@
 layout: post
 title: "爱在watir(1)----一切从搭讪开始"
 description: "其实技术教程也可以很好看"
-category: 
-tags: []
+category: watir
+tags: [watir]
 ---
 {% include JB/setup %}
 
