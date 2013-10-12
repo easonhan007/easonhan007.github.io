@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "习题12: 模组 (Module)"
+title: "练习12: 模组 (Module)"
 description: ""
 category: 
 tags: []
@@ -31,7 +31,7 @@ end
 
 从现在开始我们将把这些我们 require 进来的功能称作``` modules ```（模组）。我会这样说：「你想要 require``` open-uri ```module。」也有人给它另外一个称呼：「函式库(libraries)」。但在这里我们还是先叫它们``` modules ```（模组）吧。
 
-加分习题
+加分练习
 --------
 
 1. 上网搜寻 require 与 include 的差异点。它们有什么不同？ 
