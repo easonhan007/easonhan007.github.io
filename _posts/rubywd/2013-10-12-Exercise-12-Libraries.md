@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "练习12: 模组 (Module)"
-description: ""
-category: 
-tags: []
+title: "练习12: 模块 (Module)"
+description: "笨方法学ruby"
+category: ruby
+tags: [ruby]
 ---
 {% include JB/setup %}
 
@@ -27,9 +27,9 @@ end
 等一下！功能 (Features) 还有另外一个名字
 ----------------------------------------
 
-我在这里称呼他们为「功能(features)」。但实际上没人这样称呼。我这样做只是取了点巧，使你在学习时先不用理解「行话」。在继续进行之前你得先知道它们的真名``` modules ```（模组）。
+我在这里称呼他们为「功能(features)」。但实际上没人这样称呼。我这样做只是取了点巧，使你在学习时先不用理解「行话」。在继续进行之前你得先知道它们的真名``` modules ```（模块）。
 
-从现在开始我们将把这些我们 require 进来的功能称作``` modules ```（模组）。我会这样说：「你想要 require``` open-uri ```module。」也有人给它另外一个称呼：「函式库(libraries)」。但在这里我们还是先叫它们``` modules ```（模组）吧。
+从现在开始我们将把这些我们 require 进来的功能称作``` modules ```（模块）。我会这样说：「你想要 require``` open-uri ```module。」也有人给它另外一个称呼：「函式库(libraries)」。但在这里我们还是先叫它们``` modules ```（模块）吧。
 
 加分练习
 --------
