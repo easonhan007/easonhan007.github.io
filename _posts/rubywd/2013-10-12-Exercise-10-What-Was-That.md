@@ -17,28 +17,28 @@ tags: [ruby]
 要解决这个问题，你需要将双引号和单引号跳脱，让 Ruby 将引号也包含到字符串里面去。这里有一个例子：
 
 ```sh
-1. "I am 6'2\" tall."  # escape double-quote inside string
-2. 'I am 6\'2" tall.'  # escape single-quote inside string
+"I am 6'2\" tall."  # escape double-quote inside string
+'I am 6\'2" tall.'  # escape single-quote inside string
 ```
 
 第二种方法是使用文件语法(document syntax)，也就是``` <<NAME ```，你可以在键入``` NAME ```前放入\ 任意多行的文字。接下来你可以看到如何使用。
 
 ```sh
-1. tabby_cat = "\tI'm tabbed in."
-2. persian_cat = "I'm split\non a line."
-3. backslash_cat = "I'm \\ a \\ cat."
-4.
-5. fat_cat = <<MY_HEREDOC
-6. I'll do a list:
-7. \t* Cat food
-8. \t* Fishies
-9. \t* Catnip\n\t* Grass
-10. MY_HEREDOC
-11.
-12. puts tabby_cat
-13. puts persian_cat
-14. puts backslash_cat
-15. puts fat_cat
+tabby_cat = "\tI'm tabbed in."
+persian_cat = "I'm split\non a line."
+backslash_cat = "I'm \\ a \\ cat."
+
+fat_cat = <<MY_HEREDOC
+I'll do a list:
+\t* Cat food
+\t* Fishies
+\t* Catnip\n\t* Grass
+MY_HEREDOC
+
+puts tabby_cat
+puts persian_cat
+puts backslash_cat
+puts fat_cat
 ```
 
 你应该看到的结果
