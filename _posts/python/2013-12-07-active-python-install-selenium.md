@@ -13,7 +13,7 @@ tags: [python]
 
 只需要2步就可以安装完毕。
 
-### 安装active-python(http://www.activestate.com/activepython/)
+### 安装[active-python](http://www.activestate.com/activepython/)
 
 从[这里](http://www.activestate.com/activepython/downloads)下载active python2.7.5的windows安装版本，注意，如果是64位系统，则需要选择(64-bit, x64)版本下载。
 
