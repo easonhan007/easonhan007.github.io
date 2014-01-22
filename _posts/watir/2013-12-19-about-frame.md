@@ -23,7 +23,7 @@ coco也遇到了对象无法定位的问题。她用id去定位一个链接，�
 
 tom告诉coco，这是因为这个链接在iframe里，需要先定位到iframe，然后再定位链接。这个可以说是watir的一个规则，直接记住就好了。
 
-所谓的frame就是类似于<frame></frame>或<iframe></iframe>之类的标签，看到这个标签你就应该条件反射的想到这里有一个frame。如果需要定位frame中的一些元素，那么第一步就是定位这个frame，在watir中处理frame是优雅的。
+所谓的frame就是类似于```<frame></frame>```或```<iframe></iframe>```之类的标签，看到这个标签你就应该条件反射的想到这里有一个frame。如果需要定位frame中的一些元素，那么第一步就是定位这个frame，在watir中处理frame是优雅的。
 
 tom给出了下面的演示代码
 
