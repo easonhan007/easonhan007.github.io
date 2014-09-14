@@ -21,8 +21,10 @@ Foundation对象一般有2种风格：mutable(可变的)和immutable(不可变�
 
 我们为immutable对象创建其mutable版本，比如
 
-```object-c 
+```
+
 NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:immutableArray];
+
 ```
 
 Mutable和immutable对象各有其用。一般情况下，immutable对象会更加常见。
