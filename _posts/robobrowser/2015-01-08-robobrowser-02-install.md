@@ -9,9 +9,9 @@ tags: [robobrowser]
 
 ### 安装robobrowser 
 
-**注意:这里假设你知道如何使用pip安装python的库的知识，如果你不了解这一块的话，点[这里](http://www.easonhan.info/python/2013/12/07/active-python-install-selenium/)获取帮助。
+**注意:这里假设你知道如何使用pip安装python的库的知识，如果你不了解这一块的话，点[这里](http://www.easonhan.info/python/2013/12/07/active-python-install-selenium/)获取帮助。**
 
-强烈推荐使用pip安装。**
+强烈推荐使用pip安装。
 
 ```
 pip install robobrowser -i http://pypi.douban.com/simple/
