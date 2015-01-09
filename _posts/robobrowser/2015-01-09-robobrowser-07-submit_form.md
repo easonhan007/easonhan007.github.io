@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "还没被玩坏的robobrowser(6)——follow_link"
+title: "还没被玩坏的robobrowser(7)——表单操作"
 description: "点击链接"
 category: robobrowser
 tags: [robobrowser]
