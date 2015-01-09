@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "还没被玩坏的robobrowser(7)——submit form"
-description: "提交表单"
+title: "还没被玩坏的robobrowser(6)——follow_link"
+description: "点击链接"
 category: robobrowser
 tags: [robobrowser]
 ---
@@ -21,7 +21,7 @@ tags: [robobrowser]
 
 ### 代码
 
-``` python
+```python
 #coding: utf-8
 import re
 from robobrowser import RoboBrowser
@@ -46,10 +46,7 @@ print b.select('.alert.alert-success')[0].text
 
 ```
 
-### 讨论
-
-```form[name].value=xxxx```这个方法里，name指的是表单元素的html属性name。
 
 文本版权归乙醇所有，欢迎转载，但请标明出处。
 
-下一节: robobrowser的实现
+下一节: 提交表单
