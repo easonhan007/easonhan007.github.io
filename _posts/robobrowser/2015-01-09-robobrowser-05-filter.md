@@ -15,32 +15,30 @@ Beautiful Soup的find和find_all方法非常强大，他们支持下面一些类
 
 ### 字符串
 
-最简单的过滤器是字符串.在搜索方法中传入一个字符串参数,Beautiful Soup会查找与字符串完整匹配的内容,下面的例子用于查找文档中所有的<b>标签:
+最简单的过滤器是字符串.在搜索方法中传入一个字符串参数,Beautiful Soup会查找与字符串完整匹配的内容,下面的例子用于查找文档中所有的```<b>```标签:
 
 ```python
 soup.find_all('b')
 ```
 
 ### 正则表达式
-如果传入正则表达式作为参数,Beautiful Soup会通过正则表达式的 match() 来匹配内容.下面例子中找出所有以b开头的标签,这表示<body>和<b>标签都应该被找到:
+如果传入正则表达式作为参数,Beautiful Soup会通过正则表达式的 match() 来匹配内容.下面例子中找出所有以b开头的标签,这表示```<body>```和```<b>```标签都应该被找到:
 
 ```python
 import re
 for tag in soup.find_all(re.compile("^b")):
       print(tag.name)
-# body
-# b
 ```
+
 下面代码找出所有名字中包含”t”的标签:
+
 ```python
 for tag in soup.find_all(re.compile("t")):
       print(tag.name)
-# html
-# title
 ```
 
 ### 列表 
-如果传入列表参数,Beautiful Soup会将与列表中任一元素匹配的内容返回.下面代码找到文档中所有<a>标签和<b>标签:
+如果传入列表参数,Beautiful Soup会将与列表中任一元素匹配的内容返回.下面代码找到文档中所有```<a>```标签和```<b>```标签:
 
 ```python
 soup.find_all(["a", "b"])
@@ -51,18 +49,7 @@ True 可以匹配任何值,下面代码查找到所有的tag,但是不会返回�
 
 ```python
 for tag in soup.find_all(True):
-      print(tag.name)
-# html
-# head
-# title
-# body
-# p
-# b
-# p
-# a
-# a
-# a
-# p
+  print(tag.name)
 ```
 
 ### 方法
