@@ -53,7 +53,7 @@ b = RoboBrowser(history=True)
 ```
 ### 讨论
 
-注意一下follow_link的用法。一般来说都是用find/select/find_all方法过滤出相应的链接，然后调用```b.follow_link(link)```的方式去点击该链接。
+注意一下```follow_link```的用法。一般来说都是用```find/select/find_all```方法过滤出相应的链接，然后调用```b.follow_link(link)```的方式去点击该链接。
 
 文本版权归乙醇所有，欢迎转载，但请标明出处。
 
