@@ -14,7 +14,7 @@ tags: [robobrowser]
 ### 预备知识
 
 * python语法，不会python的同学建议通过[这个视频](http://v.163.com/special/Khan/computer.html)学习；
-* 安装好robobrowser，没有安装的同学参考[这里]()；
+* 安装好robobrowser，没有安装的同学参考[这里](http://www.easonhan.info/robobrowser/2015/01/08/robobrowser-02-install/)；
 
 ### 任务分解
 
