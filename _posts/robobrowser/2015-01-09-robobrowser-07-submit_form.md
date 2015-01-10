@@ -49,4 +49,4 @@ print b.select('.alert.alert-success')[0].text
 
 文本版权归乙醇所有，欢迎转载，但请标明出处。
 
-下一节: 提交表单
+下一节: 完结篇：阅读robobrowser的源码
