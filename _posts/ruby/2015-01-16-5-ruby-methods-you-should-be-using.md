@@ -69,10 +69,117 @@ bsearch  0.000000   0.000000   0.000000   (0.000006)
 
 如你所见，```bsearch```要快的多。不过要注意的是bsearch要求搜索的数组是排序过的。尽管这个限制bsearch的使用场景，bsearch在显示生活中确实是有用武之地的。比如通过```created_at```字段来查找从数据库中取出的数据。
 
+### Enumerable#flat_map
+
+考虑这种情况，你有个blog应用，你希望找到上个月有过评论的所有作者，你可以会这样做：
+
+```ruby
+module CommentFinder
+  def self.find_for_users(user_ids)
+    users = User.where(id: user_ids)
+    user.posts.map do |post|
+      post.comments.map |comment|
+        comment.author.username
+      end
+    end
+  end
+end
+```
+
+得到的结果看起来会是这样的
+
+```ruby
+[[['Ben', 'Sam', 'David'], ['Keith']], [[], [nil]], [['Chris'], []]]
+```
+
+不过你想得到的是所有作者，这时候你大概会使用```flatten```方法。
+
+```ruby
+module CommentFinder
+  def self.find_for_users(user_ids)
+    users = User.where(id: user_ids)
+    user.posts.map { |post|
+      post.comments.map { |comment|
+        comment.author.username
+      }.flatten
+    }.flatten
+  end
+end
+```
+
+另一个选择是使用```flat_map```方法。
+
+```ruby
+module CommentFinder
+  def self.find_for_users(user_ids)
+    users = User.where(id: user_ids)
+    user.posts.flat_map { |post|
+      post.comments.flat_map { |comment|
+        comment.author.username
+      }
+    }
+  end
+end
+```
+这跟使用flatten方法没什么太大的不同，不过看起来会优雅一点，毕竟不需要反复调用flatten了。
 
 
+### Array.new with a Block
+
+想当年我在一个技术训练营，我们的导师Jeff Casimir同志([Turing School](http://turing.io/)的创始人)让我们在一小时内写个Battleship游戏。这是极好的进行面向对象编程的练习，我们需要Rules，Players, Games和Boards类。
+
+创建代表Board的数据结构是一件非常有意思的事情。经过几次迭代我发现下面的方法是初始化8x8格子的最好方式：
+
+```ruby
+class Board
+  def board
+    @board ||= Array.new(8) { Array.new(8) { '0' } }
+  end
+end
+```
+
+上面的代码是什么意思？当我们调用```Array.new```并传入了参数length，1个长度为length的数组将会被创建。
+
+```ruby
+Array.new(8)
+#=> [nil, nil, nil, nil, nil, nil, nil, nil]
+```
+
+当你传入一个block，这时候block的返回值会被当成是数组的每个元素。
+
+```ruby
+Array.new(8) { 'O' }
+#=> ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+```
+
+因此，当你向block传入1个具有8个元素的数组时，你会得到8x8个元素的嵌套数组了。
+
+用Array#new加block的方式可以创建很多有趣和任意嵌套层级的数组。
 
 
+### <=>
+
+这个方法就很常见了。简单来说这方法是判断左值和右值的关系的。如果左值大于右值返回1，相等返回0，否则返回－1。
+
+实际上```Enumerable#sort, Enumerable#max```方法都是基于<=>的。另外如果你定义了<=>，然后再include Comparable，你将免费得到<=, <, >=, >以及between方法。
+
+这是作者的在现实生活中所用到的例子：
+
+```ruby
+def fix_minutes
+  until (0...60).member? minutes
+    @hours -= 60 <=> minutes
+    @minutes += 60 * (60 <=> minutes)
+  end
+  @hours %= 24
+  self
+end
+```
+这个方法不是很好理解，大概的意思就是如果minutes超过60的话，小时数+1,等于60小时数不变，否则－1。
+
+### 讨论
+
+会的方法越多写出来的代码可能会更有表现力，边写代码边改进,另外多读rubydoc。
 
 
 
