@@ -11,7 +11,7 @@ tags: [osx]
 
 ### 方案1:命令行中调用字典应用
 
-```shell
+```
 open dict://the_word_you_looking_for
 ```
 
@@ -52,7 +52,7 @@ if __name__ == '__main__':
 
 使用方法
 
-```shell
+```
 chmod +x dict.py
 mv dict.py dict
 ln -s /where/your/dict.py/is/dict /usr/local/bin/dict
@@ -83,14 +83,14 @@ brew install w3m
 
 然后再写一个名为youdao的shell脚本,因为我们是去有道词典进行查询，所以命名如此
 
-```shell
+```
 touch youdao
 chmod +x youdao
 ln -s /where/your/youdao/is/youdao /usr/local/bin/youdao
 ```
 
 其内容如下
-```shell
+```
 #! /bin/sh
 if [ -z "$1" ]
 then
@@ -114,7 +114,7 @@ youdao the_word_you_looking_for
 
 ### 方案4:在线查询，如果不需要中文释义的话
 
-```shell
+```
 curl dict://dict.org/d:<word_to_search_for>
 ```
 该方案也适用于liunx
