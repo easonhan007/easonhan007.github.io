@@ -3,7 +3,7 @@ layout: post
 title: "如何在osx的终端下使用字典"
 description: "如何在osx的终端下使用字典"
 category: osx
-tags: [osx, python, shell]
+tags: [osx]
 ---
 {% include JB/setup %}
 
