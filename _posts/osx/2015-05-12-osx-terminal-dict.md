@@ -13,6 +13,7 @@ tags: [osx]
 
 ```
 open dict://the_word_you_looking_for
+
 ```
 
 效果如下图 
@@ -48,6 +49,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 ```
 
 使用方法
@@ -60,6 +62,7 @@ dict the_word_you_look_for
 ```
 
 效果如下
+
 ```
 dict hello
 
@@ -90,6 +93,7 @@ ln -s /where/your/youdao/is/youdao /usr/local/bin/youdao
 ```
 
 其内容如下
+
 ```
 #! /bin/sh
 if [ -z "$1" ]
@@ -117,6 +121,7 @@ youdao the_word_you_looking_for
 ```
 curl dict://dict.org/d:<word_to_search_for>
 ```
+
 该方案也适用于liunx
 
 ![](http://images.cnitblog.com/blog2015/146263/201505/121122037205861.png)
