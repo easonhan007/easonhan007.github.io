@@ -48,7 +48,7 @@ tags: [selenium, webdriver, python]
 
 ### 具体的例子
 
-例子的代码在[这里]()，并且是可以运行通过的。
+例子的代码在[这里](https://gist.github.com/easonhan007/6dc544dc36367489c89f)，并且是可以运行通过的。
 
 ```python
 #encoding:utf-8
