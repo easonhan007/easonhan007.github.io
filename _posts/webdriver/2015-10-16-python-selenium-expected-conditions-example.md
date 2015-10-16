@@ -119,7 +119,7 @@ class title_is(object):
     def __call__(self, driver):
         return self.title == driver.title
 ```
-title_is实际上是1个class，其__call__方法被定义成是返回1个bool值。因此，一般的用法就是
+title_is实际上是1个class，其```__call__```方法被定义成是返回1个bool值。因此，一般的用法就是
 
 ```python
 # 实例化
