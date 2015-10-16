@@ -7,7 +7,7 @@ tags: [selenium, webdriver, python]
 ---
 {% include JB/setup %}
 
-今天正好[虫师]()问到selenium python binding中[support.expected_conditions]()的用法，顺手总结了一下，希望对大家有所帮助。
+今天正好[虫师](http://www.cnblogs.com/fnng/)问到selenium python binding中[support.expected_conditions](https://github.com/SeleniumHQ/selenium/blob/master/py/selenium/webdriver/remote/webdriver.py)的用法，顺手总结了一下，希望对大家有所帮助。
 
 ### 方法注释
 
