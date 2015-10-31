@@ -14,7 +14,7 @@ tagline: Supporting tagline
         <h3>
           <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </h3>
-        <span>
+        <span class="visible-md-inline visible-lg-inline">
           {{ post.date | date_to_string }}
         </span>
       </li>

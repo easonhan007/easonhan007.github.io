@@ -27,12 +27,16 @@ $badge-color:                 darken(#428bca, 6.5%) !default;
 $badge-link-hover-color:      $blog-link-active-color !default;
 
 // font
-$font-family-sans-serif:  "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       "Microsoft Yahei", Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:  "Helvetica Neue", "Luxi Sans", Helvetica, "Microsoft Yahei", Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Microsoft Yahei", "Times New Roman", Times, serif !default;
 $font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
 // font size
 $font-size-base:          16px !default;
+$line-height-base:        1.375 !default; // 22/16
+
+//blockquote
+$blockquote-font-size:        $font-size-base !default;
 
 // Navbar toggle
 $navbar-default-toggle-hover-bg:           $blog-link-active-color !default;
@@ -112,4 +116,17 @@ $navbar-default-toggle-border-color:       #fff !default;
   }
   margin: 1em 0 1em 0;
   padding-bottom: 5px;
+}
+
+blockquote {
+  color: $gray-light;
+}
+
+@media (max-width: $screen-xs-max) {
+  header {
+    margin-bottom: 60px;
+  }
+  ul {
+    padding: 0;
+  }
 }
