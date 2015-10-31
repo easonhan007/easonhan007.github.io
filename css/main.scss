@@ -7,7 +7,7 @@ $header-link-color: #fff;
 $blog-link-active-color: #2ecc71;
 // $blog-link-active-color: #f1c40f;
 // $blog-link-active-color: #3498db;
-$carrot: #e67e22;
+$carrot: #3498db;
 
 $navbar-default-color:             $header-link-color !default;
 $navbar-default-bg:                $header-color !default;
@@ -56,10 +56,19 @@ $navbar-default-toggle-border-color:       #fff !default;
     color: $header-link-color;
     text-align: center;
     font-size: 2em;
+    -webkit-transition: font-size 1s ease .2s;
+    transition: font-size 1s ease .2s;
+    &:hover {
+      font-size: 3em;
+    }
   }
   p {
-    color: $gray-lighter;
+    color: $header-link-color;
   }
+}
+
+nav a {
+  outline: none;
 }
 
 .post-list {
@@ -73,6 +82,9 @@ $navbar-default-toggle-border-color:       #fff !default;
   }
   a {
     color: $gray-dark;
+    outline: none;
+    -webkit-transition: color .5s ease-out .2s;
+    transition: color .5s ease-out .2s;
     &:hover{
       color: $blog-link-active-color;
     } 
