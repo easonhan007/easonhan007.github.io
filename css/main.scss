@@ -103,7 +103,7 @@ $navbar-default-toggle-border-color:       #fff !default;
 }
 
 .content {
-  font-size: 16px;
+  margin-top: 1.5em;
 }
 
 .post-date {
@@ -111,6 +111,7 @@ $navbar-default-toggle-border-color:       #fff !default;
 }
 
 .page-header {
+  display: none;
   h1 {
     font-size: 24px;
   }
@@ -124,9 +125,9 @@ blockquote {
 
 @media (max-width: $screen-xs-max) {
   header {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   ul {
-    padding: 0;
+    padding: 1em;
   }
 }
