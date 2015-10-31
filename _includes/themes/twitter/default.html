@@ -15,8 +15,9 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <!--<link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">-->
+    <link href="/css/main.css" rel="stylesheet" type="text/css" media="all">
+    <!--<link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">->
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -33,34 +34,60 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
+    <header>
+      <div class="hero">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hic-blog-nav-items" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">Eason Han</a>
+            </div>
+            <div class="collapse navbar-collapse" id="hic-blog-nav-items">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                {% assign pages_list = site.pages %}
+                {% assign group = 'navigation' %}
+                {% include JB/pages_list %}
+              </ul>
+            </div>
+          </div> 
+        </nav>
+        <div class="container-fluid">
+          <h2>A Bolg Of Eason Han</h2>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div class="container-narrow">
-
-      <div class="content">
-        {{ content }}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-10 col-sm-12 col-md-offset-1 col-lg-offset-1">
+          {{ content }}
+        </div>
       </div>
       <hr>
       <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
+        <p class="text text-center text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
       </footer>
 
     </div>
 
     {% include JB/analytics %}
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+    integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        if($('.page-header').length != 0){
+          $('.page-header').css('visibility', 'hidden'); 
+          $('.hero h2').text($('.page-header').text());
+        }
+      }); 
+    </script>
   </body>
 </html>

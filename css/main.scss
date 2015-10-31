@@ -1,0 +1,115 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+$header-color: #34495e;
+$header-link-color: #fff;
+$blog-link-active-color: #2ecc71;
+// $blog-link-active-color: #f1c40f;
+// $blog-link-active-color: #3498db;
+$carrot: #e67e22;
+
+$navbar-default-color:             $header-link-color !default;
+$navbar-default-bg:                $header-color !default;
+$navbar-default-border:            none;
+
+// Navbar links
+$navbar-default-link-color:                $header-link-color !default;
+$navbar-default-link-hover-color:          $blog-link-active-color !default;
+$navbar-default-link-hover-bg:             transparent !default;
+$navbar-default-link-active-color:         $blog-link-active-color !default;
+$navbar-default-link-active-bg:            transparent !default;
+$navbar-default-link-disabled-color:       #ccc !default;
+$navbar-default-link-disabled-bg:          transparent !default;
+
+$badge-bg:                    #fff !default;
+$badge-color:                 darken(#428bca, 6.5%) !default;
+$badge-link-hover-color:      $blog-link-active-color !default;
+
+// font
+$font-family-sans-serif:  "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       "Microsoft Yahei", Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
+
+// font size
+$font-size-base:          16px !default;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           $blog-link-active-color !default;
+$navbar-default-toggle-icon-bar-bg:        #fff !default;
+$navbar-default-toggle-border-color:       #fff !default;
+
+@import "bootstrap";
+@import "pygments";
+
+
+.hero {
+  background-color: $header-color;
+  height: 300px;
+  width: 100%;
+  h2 {
+    padding-top: 100px;
+    color: $header-link-color;
+    text-align: center;
+    font-size: 3em;
+  }
+}
+
+.post-list {
+  list-style: none;
+  li {
+    margin: 2em auto 2em auto;
+  }
+  h3 {
+    display: inline;
+    font-size: 22px;
+  }
+  a {
+    color: $gray-dark;
+    &:hover{
+      color: $blog-link-active-color;
+    } 
+  }
+  span {
+    float: right;
+    vertical-align: center;
+    line-height: 26px;
+    color: $gray;
+  }
+}
+
+.tag {
+  display: inline-block;
+  line-height: 2em;
+  a {
+    color: #fff;
+    &:hover {
+      color: $blog-link-active-color;
+    }
+  }
+}
+
+.tag_box {
+  list-style: none;
+  padding-left: 0;
+  li {
+    display: inline-block;
+    margin: 0.3em 0.3em;
+  }
+}
+
+.content {
+  font-size: 16px;
+}
+
+.post-date {
+  margin-top: 2em;
+}
+
+.page-header {
+  h1 {
+    font-size: 24px;
+  }
+  margin: 1em 0 1em 0;
+  padding-bottom: 5px;
+}
