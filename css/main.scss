@@ -74,11 +74,12 @@ nav a {
 .post-list {
   list-style: none;
   li {
-    margin: 2em auto 2em auto;
+    margin: 1em auto 1em auto;
   }
   h3 {
     display: inline;
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: normal;
   }
   a {
     color: $gray-dark;
