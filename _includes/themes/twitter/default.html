@@ -58,7 +58,18 @@
       </nav>
       <div class="hero visible-md-block visible-lg-block visible-sm-block">
         <div class="container-fluid">
-          <h2>>>> import this</h2>
+          {% if page.section == "post" %}
+            <h2>{{ page.title }}</h2>
+          {% else %}
+            <h3> <span id="site-title"> Keep Learning </span></h3>
+          {% endif %}
+
+          {% if page.tagline %} 
+            <p class="text text-center">{{ page.tagline }}</p>
+          {% endif %}
+          {% if page.date %} 
+            <p class="text text-center">{{ page.date | date_to_long_string }}</p>
+          {% endif %}
         </div>
       </div>
     </header>
@@ -81,12 +92,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
     integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
     crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        if($('.page-header').length != 0){
-          $('.hero h2').text($('.page-header').text());
-        }
-      }); 
-    </script>
+
+    {% if page.section != "post" && site.dynamic-typing %}
+      <script src="/js/typed.js"></script>
+      <script type="text/javascript">
+        var myQuotes =  new Array();
+        {% for line in site.lines %}
+          myQuotes.push("{{ line.text }}");
+        {% endfor %}
+        $("#site-title").typed({
+                    strings: myQuotes,
+                    typeSpeed: {{ site.type-speed }},
+                    backDelay: {{ site.delete-delay }},
+                    startDelay: {{ site.start-delay }},
+                    loop: {{ site..loop }},
+                    loopCount: {{ site.loop-count }},
+                    cursorChar: "|"
+                  });
+      </script>
+    {% endif %}
   </body>
 </html>

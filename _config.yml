@@ -36,6 +36,35 @@ sass:
   style: compressed
   sass_dir: _sass
 
+dynamic-typing: True
+loop: True
+loop-count: False # Set False for infinite loop, or set any number for finite loop.
+type-speed: 50
+start-delay: 400  # Default 200
+delete-delay: 2000  # Default 5000
+
+lines: 
+  - text: "python"
+  - text: "import this"
+  - text: "Beautiful is better than ugly."
+  - text: "Explicit is better than implicit."
+  - text: "Simple is better than complex."
+  - text: "Complex is better than complicated."
+  - text: "Sparse is better than dense."
+  - text: "Readability counts."
+  - text: Special cases aren't special enough to break the rules.
+  - text: Although practicality beats purity.
+  - text: Errors should never pass silently.
+  - text: Unless explicitly silenced.
+  - text: "In the face of ambiguity, refuse the temptation to guess."
+  - text: There should be one-- and preferably only one --obvious way to do it.
+  - text: Although that way may not be obvious at first unless you're Dutch.
+  - text: Now is better than never.
+  - text: Although never is often better than *right* now.
+  - text: "If the implementation is hard to explain, it's a bad idea."
+  - text: "If the implementation is easy to explain, it may be a good idea."
+  - text: Namespaces are one honking great idea -- let's do more of those!
+
 JB :
   version : 0.3.0
 
@@ -121,7 +150,6 @@ JB :
   sharing :
     provider : false
 
-    
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
   #

@@ -1,7 +1,8 @@
 ---
 layout: default
 title: 乙醇的blog
-tagline: Supporting tagline
+tagline: 
+section: index
 ---
 {% include JB/setup %}
 
