@@ -2,7 +2,7 @@
 layout: post
 title: "序言"
 description: "给Selenium2自动化测试实战--基于Python语言的序"
-tagline: "给<<Selenium2自动化测试实战--基于Python语言>>的序"
+tagline: "给Selenium2自动化测试实战--基于Python语言的序"
 category:selenium 
 tags: [selenium]
 ---
