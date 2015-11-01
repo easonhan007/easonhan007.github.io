@@ -2,40 +2,61 @@
   <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
 </div>
 
-<div class="content">
+<div class="content" id="content">
   {{ content }}
 </div>
 
-  {% unless page.categories == empty %}
-    <ul class="tag_box">
-      <strong>Categories:</strong>
-      {% assign categories_list = page.categories %}
-      {% include JB/categories_list %}
-    </ul>
-  {% endunless %}  
+{% if site.share.display %}
+  {% if site.share.style == "side" %}
+    <!-- JiaThis Button BEGIN -->
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?move=0&amp;btn=r3.gif" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+  {% else %}
+    <div class="share-area">
+      <!-- JiaThis Button BEGIN -->
+      <div class="jiathis_style">
+        <a class="jiathis_button_tsina"></a>
+        <a class="jiathis_button_weixin"></a>
+        <a class="jiathis_button_qzone"></a>
+        <a class="jiathis_button_tqq"></a>
+        <a class="jiathis_button_renren"></a>
+        <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+        <a class="jiathis_counter_style"></a>
+      </div>
+      <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+    </div>
+  {% endif %}
+{% endif%}
 
-  {% unless page.tags == empty %}
-    <ul class="tag_box">
-      <strong>Tags:</strong>
-      {% assign tags_list = page.tags %}
-      {% include JB/tags_list %}
-    </ul>
-  {% endunless %}  
+{% unless page.categories == empty %}
+  <ul class="tag_box">
+    <strong>Categories:</strong>
+    {% assign categories_list = page.categories %}
+    {% include JB/categories_list %}
+  </ul>
+{% endunless %}  
 
-    <hr>
-      <ul class="pagination">
-      {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-      {% else %}
-        <li class="prev disabled"><a>&larr; Previous</a></li>
-      {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
-      {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-      {% else %}
-        <li class="next disabled"><a>Next &rarr;</a>
-      {% endif %}
-      </ul>
-    {% include JB/comments %}
-  </div>
-</div>
+{% unless page.tags == empty %}
+  <ul class="tag_box">
+    <strong>Tags:</strong>
+    {% assign tags_list = page.tags %}
+    {% include JB/tags_list %}
+  </ul>
+{% endunless %}  
+
+  <hr>
+    <ul class="pagination">
+    {% if page.previous %}
+      <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+    {% else %}
+      <li class="prev disabled"><a>&larr; Previous</a></li>
+    {% endif %}
+      <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+    {% if page.next %}
+      <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+    {% else %}
+      <li class="next disabled"><a>Next &rarr;</a>
+    {% endif %}
+    </ul>
+  {% include JB/comments %}

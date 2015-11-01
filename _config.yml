@@ -65,6 +65,10 @@ lines:
   - text: "If the implementation is easy to explain, it may be a good idea."
   - text: Namespaces are one honking great idea -- let's do more of those!
 
+share: 
+  display: True
+  style: side
+
 JB :
   version : 0.3.0
 

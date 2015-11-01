@@ -178,6 +178,13 @@ blockquote {
     100% { opacity:1; }
 }
 
+.share-area {
+  display: block;
+  margin: 1em auto 0 auto;
+  width: 200px;
+  height: 2em;
+}
+
 @media (max-width: $screen-xs-max) {
   header {
     margin-bottom: 50px;
