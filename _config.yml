@@ -68,7 +68,7 @@ lines:
 share: 
   display: True
   # side or normal
-  style: side
+  style: normal
 
 JB :
   version : 0.3.0
