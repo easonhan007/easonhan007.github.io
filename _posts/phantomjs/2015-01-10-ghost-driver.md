@@ -7,6 +7,8 @@ tags: [phantomjs]
 ---
 {% include JB/setup %}
 
+2017年6月16日更新: 目前phantomjs已经放弃更新，大家可以选择使用chrome的[Headless](https://developers.google.com/web/updates/2017/04/headless-chrome)模式来替代。
+
 做过selenium自动化项目的同学应该都遇到过这样的问题：测试用例太多，运行速度过慢导致团队成员怨声载道。
 
 于是便有了selenium grid和多线程运行selenium测试用例的方法。这些方法各有利弊这里就不一一列举了。但总的来说，如果浏览器运行的速度足够快，那么多线程并发时的用例执行速度应该是可以满足实际项目需求的。
