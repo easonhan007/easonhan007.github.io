@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "python每日一练"
+title: "python练习题"
 description: "python的简单练习"
 category: python
 tags: [python]
