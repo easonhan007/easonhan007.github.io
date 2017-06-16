@@ -7,7 +7,7 @@ tags: [phantomjs]
 ---
 {% include JB/setup %}
 
-2017年6月16日更新: 目前phantomjs已经放弃更新，大家可以选择使用chrome的[Headless](https://developers.google.com/web/updates/2017/04/headless-chrome)模式来替代。
+**2017年6月16日更新: 目前phantomjs已经放弃更新，大家可以选择使用chrome的[Headless](https://developers.google.com/web/updates/2017/04/headless-chrome)模式来替代。**
 
 做过selenium自动化项目的同学应该都遇到过这样的问题：测试用例太多，运行速度过慢导致团队成员怨声载道。
 
@@ -41,7 +41,7 @@ ghost driver现在已经跟phantomjs合体，所以安装好最新版本的phant
 
 * mac和linux用户可以把解压后得到的phantomjs建个软链到/usr/local/bin目录下。```ln -s /where/is/phantomjs /usr/local/bin/phantomjs```；
 
-### 快速开始 
+### 快速开始
 
 python用户新建itest.py文件然后敲入下面的内容
 
@@ -79,7 +79,7 @@ b.close
 
 * 当页面上有flash播放器时，phantom可能会萌萌哒的卡在那里一动不动；
 
-* ghostdriver基于[phantomjs](http://phantomjs.org/)，phantomjs可以做爬虫，简单的性能测试，ui自动化测试和其他一些工作； 
+* ghostdriver基于[phantomjs](http://phantomjs.org/)，phantomjs可以做爬虫，简单的性能测试，ui自动化测试和其他一些工作；
 
 * 由于没有ui，当测试发生错误的时候调试的工作量就会变大；
 
